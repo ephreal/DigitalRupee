@@ -1,0 +1,47 @@
+2rt0f9zusje4.waug3wt40gue6jp89oaw3h5tg8s
+264t98gaywh6tkigwuzsole4ujwogl4jws9g0j3y
+34ty0wg9ur4.jwgovziskletng.olizshgnjaw.s
+3468uhslihawkigtusk4hwkezigmxghwte7gfjuw
+246t8g4w453etg434s6wt4gv3zsd4gt345esy4es
+23tgw46335e4y35s4rtg54es5y35des36r5yg4hf
+23tqei4wayt54e6w78yu45r6d9h5aw4e6tg9sz5d
+waertg4345e6y4ghdzs64rg654e4g68d4srf85g4
+26t4ga4sre6t3g5g4dzf4g4e46ye69rghdfg456r
+234qywtghdsrg5ty4ghdzfgxdf4hgfnz56sd4gfg
+dgfhbgjncvx5r4y543g5n46586tuhjgfcnx65fg6
+e5y5h4c5b156584y5f6s5dv4bg525re68g4fv5bx
+34gdf5g3546ysr5dh854498u4h68dfx4bh68dz4f
+swe+rg5+aw-g5a+-sg5fsv5sg6fsdf69bgg+r*g8
+aweg+-aewr4rtgzxdf569345+aw3-fzdf46gzsd8
+9f,.,mvt9u5z9d+stg5resdzbncvh6,5+hj.crhd
+426tgzsdg4erwareg+sdr456y+s-dxf5g964swg8
+h+j.9+l-3bygjxdfbv+z-se9t55e6h5+cf9gh5ds
+64h+z36y09ghspirekp6oyiszu,dt.3t.aweto94
+26ty0agwe8u56itlo9awsutyol34awyue8ruggfu
+
+
+
+
+
+
+
+Place all masternode keys above this message.
+Placing any keys below this message will cause
+this message to instead be interpreted as your
+private key list.
+
+This file is an example for a 20 masternode 
+setup. This means there are 20 (fake) private 
+keys above.
+
+Delete all the fake private keys provided when
+setting this file up yourself. Place each key
+on it's own line, starting from the top of the
+file. If you have a blank line in between any of
+your private keys, that blank line WILL be
+inserted as a private key.
+
+The best possible option for placing your keys
+in this file is to delete everything and place
+each key on it's own line, directly under the
+previous key.
