@@ -93,13 +93,7 @@ cat /root/Masternodes/Masternode3/Rupee.conf
 
 ## Starting the masternodes
 
-Once you're ready to run the masternodes, modify the start_masternodes.sh to reflect how many masternodes your are running.  
-To do this, edit the file and change the Last_Node variable to how many you have.
-```
-LastNode=20
-```
-
-Once you have saved the file, run the script
+Once you're ready to run the masternodes, run the start_masternodes.sh script
 ```
 ./start_masternodes.sh
 ```
@@ -136,8 +130,14 @@ cat /root/Masternodes/Masternode1/Rupee.txt
 cat /root/Masternodes/Masternode2/Rupee.txt
 ```
 
+If all is good, start the masternodes
+```
+./start_masternodes.sh
+```
+
 
 If these scripts helped you at all, please send a few coins my way.  
+
 Bitcoin
 ```
 1F6SExymCmQWx3r6Bjr5uYjinHqdksWMKQ
