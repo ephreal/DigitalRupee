@@ -24,7 +24,7 @@ cd $HOME
 Clone this repository. To clone the repository. To ensure you have git installed and run the following commands.  
 ```
 apt-get install git
-git clone https://github.com/DigitalRupee
+git clone https://github.com/ephreal/DigitalRupee
 ```
 
 ## Initial setup
