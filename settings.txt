@@ -1,0 +1,10 @@
+server_ip=192.168.10.1
+
+amount_of_masternodes=20
+
+private_key_file=keys.txt
+
+rpcuser=AedsfoiaSWERFdfcvu1123097dfASdf
+
+rpcpassword=88easdfaoetufASDGIsetuihdsvfadsf8922
+

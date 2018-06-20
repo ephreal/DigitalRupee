@@ -2,28 +2,36 @@
 The scripts in this repository are used to set up multiple masternodes on one linux server. The scripts have only been tested on Ubuntu (*Shudder*), and will probably only work on Ubuntu (*Shudder*) because the instructions provided were only for Ubuntu (*Double Shudder*). With a little work, the scripts could be made to work on a wide variety of Linux O/S, but I don't have the time to work on that at the moment.
 
 This repository contains:  
-keys.txt - Where you place the masternode private keys.  
-rupee_masternode_setup.sh - The setup script that will set up all needed folders for you. You will need to modify, at minimum, the rpcuser, rpcpassword, ServerIP, and EndingNode variables to suit your install.  
-start_masternodes.sh - The script that will run all the masternodes in the masternode directory. If you made any changes to the masternode variable in the rupee_masternode_setup.sh, you will need to change that here. You will also need to change the $Last_Node variable to match your setup.  
+	* keys.txt - Where you place the masternode private keys.  
 
-All in all, to use this setup requires making a minimum of 4 changes to 3 text files. A sample setup will be posted here eventually.
+	* rupee_masternode_setup.sh - The setup script that sets everything up for you.
 
+	* start_masternodes.sh - The script that will run all the masternodes in the masternode directory.  
 
-# Example Usage
+ 	* settings.txt - The file you modify for your setup.  
+
+The example below assumes the following:  
+	1. You have set up your wallet  
+	2. You have a text file with all your masternode private keys  
+	3. You have an Ubuntu server up and running
+	4. You are logged into the server as root.
+	5. You are not afraid to copy/paste commands (You really don't need to know what they do for them to work.... I swear!).
+
+If you wish to copy and paste as many commands as possible at once, go to the bottom of the readme for a shortened version.
+
+# Example
 
 ## Download
 
-First make sure you have followed the Rupee masternode setup steps for the wallet.  
-By this point you should have all your private keys ready, your masternode server installed, and you should be logged in as root.  
 
 Start by going to your home directory.
 ```
 cd $HOME
 ```
 
-Clone this repository. To clone the repository. To ensure you have git installed and run the following commands.  
+Clone my repository. To do this, run the following commands:   
 ```
-apt-get install git
+apt-get install -y git
 git clone https://github.com/ephreal/DigitalRupee
 ```
 
@@ -34,7 +42,8 @@ Once downloaded, go into the directory.
 cd DigitalRupee
 ```
 
-Edit the keys.txt file. I recommend reading the usage in the file, deleting everything in the file, and then placing your keys in it.  
+Edit the keys.txt file. I recommend reading the usage first. Then delete everything in the file and place your keys in it.  
+
 To view and edit the file, type
 ```
 nano keys.txt
@@ -45,21 +54,30 @@ Once you have added your keys to the file, type
 chmod +x *.sh
 ```
 
-## Setting up private keys and server IP
+## Setting up your info
 
-We are now ready to make your changes to the rupee_masternode_setup.sh. 
+We are now ready to make your changes to the settings.txt. 
 ```
-nano rupee_masternode_setup.sh
+nano settings.txt
 ```
 
-Scroll down past the licensing information and modify the ServerIP and EndingNode.
-```
-ServerIP=YOUR_SERVER_IP_HERE
+You will want to change anything after an equals sign in this file. (Except keys.txt unless you know what you're doing). For the rpcuser and rpcpassword, I recommend using a mix of uppercase, lowercase, and numbers. Make the username at least 8 characters long, and the password at least 16. You will not need to remember these after setup.  
 
-EndingNode=AMOUNT_OF_MASTERNODES_TO_SETUP
+For example:  
 ```
-I also recommend changing the rpcuser and the rpcpassword to something random as well.
+private_key_file=keys.txt
 
+server_ip=YOUR_SERVER_IP_HERE
+
+amount_of_masternodes=AMOUNT_OF_MASTERNODES_TO_SETUP
+
+rpcuser=RANDOM_NAME_HERE
+
+rpcpassword=RANDOM_PASSWORD_HERE
+
+```
+
+Hit Ctrl and X at the same time, then hit  y for yes, and then enter to save the file.
 
 ## Running the script
 
@@ -67,8 +85,6 @@ Once you have completed that, save the file. We are now ready to run it.
 ```
 ./rupee_masternode_setup.sh
 ```
-
-Wait a while for this to complete. You will receive an error message about a missing file at the end, which is to be expected and ok.
 
 ## Verifying your conf files are correct
 
@@ -93,6 +109,35 @@ Once you have saved the file, run the script
 
 You're done. Anytime the server goes down or needs to be restarted, log into the server and run the start_masternodes.sh to start them all up again. 
 While making the script run shortly after startup is possible, that's outside the scope of this tutorial.
+
+
+## Shortened Version
+
+This is recommended for people who understand the above steps. The code is the same as above, there just fewer steps.
+
+Copy and paste the following into the terminal.
+```
+cd $HOME
+apt-get install -y git
+git clone https://github.com/ephreal/DigitalRupee
+cd DigitalRupee
+chmod +x *.sh
+nano keys.txt
+```
+
+Add your keys to the file. Hit Ctrl + X , then hit y for yes, then enter to save the file.
+
+```
+nano settings.txt
+```
+Modify everything as explained in **Setting up your info** above. Save the file.
+
+
+```
+./rupee_masternode_setup.sh
+cat /root/Masternodes/Masternode1/Rupee.txt
+cat /root/Masternodes/Masternode2/Rupee.txt
+```
 
 
 If these scripts helped you at all, please send a few coins my way.  

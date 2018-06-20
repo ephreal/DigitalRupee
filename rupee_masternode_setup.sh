@@ -51,27 +51,25 @@ MasternodeDirName=Masternode
 
 # A random RPC username
 # (Create your own!)
-rpcuser=AedsfoiaSWERFdfcvu1123097dfASdf
+rpcuser=`cat settings.txt | grep rpcuser | cut -d "=" -f2`
 
 # A random RPC password
 # (Create your own!)
-rpcpassword=6846353*88easdfaoetufASDGIsetuihdsvfadsf8922
+rpcpassword=`cat settings.txt | grep rpcpassword | cut -d "=" -f2`
 
 # Your server IP address
-ServerIP=192.168.10.1
+ServerIP=`cat settings.txt | grep server_ip | cut -d "=" -f2`
 
 # Masternode Private Keys file
-keys=$SC_DIR/keys.txt
+keys=$SC_DIR/`cat settings.txt | grep private_key_file | cut -d "=" -f2`
 
-# This is what masternode number you
-# are going to start with
-# (Probably 1)
+# Only change this if you're doing
+# some different setup.
 StartingNode=1
 
-# This is the masternode you are going
-# to end with
-# (In our case, it was 20)
-EndingNode=20
+# This is the masternode you are 
+# setting up (Specified in settings.txt)
+EndingNode=`cat settings.txt | grep amount_of_masternodes | cut -d "=" -f2`
 
 # Set this to your starting port
 # (Probably 8517)
@@ -202,3 +200,18 @@ for i in `seq $StartingNode $EndingNode`; do
 	# update z so we can start over
 	z=8517
 done;
+
+echo .
+echo .
+echo "The script has completed running."
+echo "Please check some Rupee.conf files to verify your private keys are correct"
+echo "These are all located in $MasternodeDataDir/MasternodeX (Where X is the "
+echo "masternode number)"
+echo "$EndingNode Masternodes were set up."
+echo .
+echo "A quick way to check the first masternode is to run the following command:"
+echo "cat $MasternodeDataDir/Masternode1/Rupee.conf"
+echo .
+echo "To check others, just change the 1 to a 2 (or a 3, or 4, etc)"
+echo "I recommned checking at least the first and last Rupee.conf files."
+echo .

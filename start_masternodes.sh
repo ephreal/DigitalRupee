@@ -42,7 +42,7 @@ Rupee_Daemon=/root/Rupee-Core/src/Rupeed
 Masternode_Root_Dir=/root/Masternodes
 Masternode_Dir_Names=Masternode
 First_Node=1
-Last_Node=20
+Last_Node=`cat settings.txt | grep amount_of_masternodes | cut -d "=" -f2`
 
 for i in `seq $First_Node $Last_Node`; do
         $Rupee_Daemon -datadir=$Masternode_Root_Dir/$Masternode_Dir_Names$i
