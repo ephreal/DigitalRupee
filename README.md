@@ -1,21 +1,18 @@
 # DigitalRupee
-The scripts in this repository are used to set up multiple masternodes on one linux server. The scripts have only been tested on Ubuntu (*Shudder*), and will probably only work on Ubuntu (*Shudder*) because the instructions provided were only for Ubuntu (*Double Shudder*). With a little work, the scripts could be made to work on a wide variety of Linux O/S, but I don't have the time to work on that at the moment.
+The scripts in this repository are used to set up multiple masternodes on one linux server. The scripts have only been tested on Ubuntu (*Shudder*), and will probably only work on Ubuntu because the instructions provided were only for Ubuntu. With a little work, the scripts could be made to work on a wide variety of Linux O/S, but I don't have the time to work on that at the moment.
 
 This repository contains:  
-	* keys.txt - Where you place the masternode private keys.  
-
-	* rupee_masternode_setup.sh - The setup script that sets everything up for you.
-
-	* start_masternodes.sh - The script that will run all the masternodes in the masternode directory.  
-
- 	* settings.txt - The file you modify for your setup.  
+  * keys.txt - Where you place the masternode private keys.  
+  * rupee_masternode_setup.sh - The setup script that sets everything up for you.
+  * start_masternodes.sh - The script that will run all the masternodes in the masternode directory.  
+  * settings.txt - The file you modify for your setup.  
 
 The example below assumes the following:  
-	1. You have set up your wallet  
-	2. You have a text file with all your masternode private keys  
-	3. You have an Ubuntu server up and running
-	4. You are logged into the server as root.
-	5. You are not afraid to copy/paste commands (You really don't need to know what they do for them to work.... I swear!).
+  1. You have set up your wallet  
+  2. You have a text file with all your masternode private keys  
+  3. You have an Ubuntu server up and running  
+  4. You are logged into the server as root.  
+  5. You are not afraid to copy/paste commands (You really don't need to know what they do for them to work.... I swear!).  
 
 If you wish to copy and paste as many commands as possible at once, go to the bottom of the readme for a shortened version.
 
