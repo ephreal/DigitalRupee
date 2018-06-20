@@ -93,3 +93,26 @@ Once you have saved the file, run the script
 
 You're done. Anytime the server goes down or needs to be restarted, log into the server and run the start_masternodes.sh to start them all up again. 
 While making the script run shortly after startup is possible, that's outside the scope of this tutorial.
+
+
+If these scripts helped you at all, please send a few coins my way.  
+Bitcoin
+```
+1F6SExymCmQWx3r6Bjr5uYjinHqdksWMKQ
+```
+
+Defcoin
+```
+DG2KCYZxy8s6Navqe7rQA5N11WPKdeJ9dH
+```
+
+Etherium
+```
+0x5b7f449332F6E2054027424724bB1b7C30BDDB63
+```
+(Note: I know that looks like a Hex number... it's not. I love it.)  
+
+Rupee
+```
+RPczTav89pMtz97QYGncMJYps6DV1YPTuG
+```
