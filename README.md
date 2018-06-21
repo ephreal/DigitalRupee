@@ -44,7 +44,10 @@ Edit the keys.txt file. I recommend reading the usage first. Then delete everyth
 To view and edit the file, type
 ```
 nano keys.txt
+
 ```
+
+Hit Ctrl+x at the same time, then y for yes, then enter to save the file.
 
 Once you have added your keys to the file, type
 ```
@@ -104,7 +107,7 @@ While making the script run shortly after startup is possible, that's outside th
 
 ## Shortened Version
 
-This is recommended for people who understand the above steps. The code is the same as above, there just fewer steps.
+This is recommended for people who understand the above steps. The code is the same as above, thre's just less explanation.
 
 Copy and paste the following into the terminal.
 ```
