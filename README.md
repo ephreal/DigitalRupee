@@ -107,7 +107,7 @@ While making the script run shortly after startup is possible, that's outside th
 
 ## Shortened Version
 
-This is recommended for people who understand the above steps. The code is the same as above, thre's just less explanation.
+This is recommended for people who understand the above steps. The code is the same as above, there's just less explanation.
 
 Copy and paste the following into the terminal.
 ```
@@ -117,6 +117,7 @@ git clone https://github.com/ephreal/DigitalRupee
 cd DigitalRupee
 chmod +x *.sh
 nano keys.txt
+
 ```
 
 Add your keys to the file. Hit Ctrl + X , then hit y for yes, then enter to save the file.
